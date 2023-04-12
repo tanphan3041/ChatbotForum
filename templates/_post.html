@@ -1,0 +1,70 @@
+<div class="card text-center mb-2">
+   <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+         <li class="nav-item">
+            <a class="nav-link active" href="#">Bài viết</a>
+         </li>
+         {% if request.path == url_for('main_page') %}
+         <li class="nav-item">
+            <a class="nav-link link-success" href="{{url_for('view_post', id = post.id)}}">Bình luận</a>
+         </li>
+         {% endif %}
+      </ul>
+   </div>
+   <div class="card-body">
+      {% if current_user.id == post.user.id %}
+      <button class="btn btn-sm btn-link link-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="float:right">
+         Xóa
+      </button>
+      {% endif %}
+      <h5 class="card-title text-left">Người viết: {{post.user.email}}</h5>
+      <h4 class="card-title text-left">{{post.title}}</h4>
+      <p class="card-text text-left">{{post.body}}</p>
+      <p class="card-text text-left"><small class="text-muted">{{post.created_at}}</small></p>
+   </div>
+
+
+   {% if current_user.id == post.user.id %}
+   <div class="col col-2 mb-3">
+      <button class="btn btn-outline-success btn-sm" type="button" data-toggle="collapse" data-target="#edit-{{post.id}}"
+         aria-expanded="false" aria-controls="collapseExample" style="float: left;">
+         Chỉnh sửa
+      </button>
+   </div>
+   <div class="row">
+      <form id="edit-{{post.id}}" class="form collapse" method="post" action="/posts/{{post.id}}">
+         <div class="row border m-2">
+            <div class="col col-10 ml-3">
+               <p style="float: left;">Tiêu đề:</p>
+               <input name="title" type="title" class="form-control mb-2" value="{{post.title}}">
+               <p style="float: left;">Nội dung:</p>
+               <input name="body" type="body" class="form-control mb-3" value="{{post.body}}">
+               <button class="btn btn-sm btn-success mb-3" type="submit" style="float:left">Lưu</button>
+            </div>
+         </div>
+         
+      </form>
+   </div>
+   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h5 class="modal-title" id="staticBackdropLabel">Xóa bài viết</h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               Bạn có thật sự muốn xóa bài viết?
+            </div>
+            <div class="modal-footer">
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+               <form class="form" action="/posts/{{post.id}}/delete">
+                  <button class="btn btn-danger" type="submit">Xóa</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   {% endif %}
+</div>
+

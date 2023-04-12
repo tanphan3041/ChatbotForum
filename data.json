@@ -1,0 +1,467 @@
+{
+   "intents": [
+      {
+         "tag": "chao",
+         "patterns": [
+            "Chào",
+            "Xin chào",
+            "Xin chào bạn",
+            "Dạ, xin chào"
+         ],
+         
+         "responses": [
+            "Xin chào bạn.",
+            "Chào bạn.",
+            "Chào, mình có thể giúp gì cho bạn?"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "tambiet",
+         "patterns": [
+            "Tạm biệt",
+            "Mình cảm ơn",
+            "Cảm ơn",
+            "Dạ cảm ơn",
+            "Dạ em cảm ơn ạ"
+         ],
+         "responses": [
+            "Rất vui vì được giúp",
+            "Tạm biệt! Rất vui vì được giúp"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "cauhoi",
+         "patterns": [
+            "Dạ, em muốn đặt câu hỏi",
+            "Mình muốn đặt câu hỏi",
+            "Mình muốn hỏi về niên luận ạ",
+            "Mình muốn hỏi về cách làm niên luận ạ",
+            "Mình muốn hỏi về vấn đề này ạ",
+            "Dạ mình có vấn đề muốn hỏi",
+            "Mình muốn hỏi về cách thực hiện luận văn ạ",
+            "Mình muốn hỏi về niên luận cơ sở ạ",
+            "Mình muốn hỏi về niên luận chuyên ngành ạ"
+         ],
+         "responses": [
+            "Dạ, mời bạn đặt câu hỏi.",
+            "Vâng, mời bạn đặt câu hỏi."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "camera",
+         "patterns": [
+            "Để có thể thực hiện đề tài liên quan đến theo dõi hoạt động thông qua camera thì em cần gì ạ?",
+            "Muốn làm đề tài theo dõi hoạt động từ camera thì cần gì ạ?",
+            "Để làm đề tài theo dõi hoạt động từ camera thì cần biết gì ạ?",
+            "Để có thể làm ứng dụng liên quan đến theo dõi hoạt động thông qua camera thì cần gì ạ?",
+            "Để có thể làm phần mềm liên quan đến theo dõi hoạt động thông qua camera thì cần gì ạ?",
+            "Em muốn làm đề tài liên quan đến theo dõi hoạt động thông qua camera thì em nên học gì ạ?",
+            "theo dõi hoạt động thông qua camera",
+            "theo dõi hoạt động từ camera",
+            "camera"
+         ],
+         "responses": [
+            "Bạn có thể tìm hiểu học phần Nguyên lý máy học hoặc khai khoáng dữ liệu/thị giác máy tính",
+            "Bạn nên tìm hiểu những học phần liên quan đến khai khoán dữ liệu/thị giác máy tính"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "trolyao",
+         "patterns": [
+            "Em muốn thực làm đề tài liên quan đến cố vấn học tập ảo thì em nên học gì ạ?",
+            "Em muốn thực hiện đề tài liên quan đến cố vấn học tập ảo thì em nên học gì ạ",
+            "Mình muốn làm đề tài liên quan đến trợ lý ảo thì mình nên học gì?",
+            "Để làm đề tài liên quan đến trợ lý ảo thì mình nên tìm hiểu gì?",
+            "Làm đề tài về trợ lý ảo thì mình nên học gì?",
+            "cố vấn ảo",
+            "trợ lý ảo",
+            "Mình nên học gì để làm đề tài về trợ lý ảo",
+            "cố vấn học tập ảo"
+         ],
+         "responses": [
+            "Bạn có thể học về Nguyên lý máy học",
+            "Bạn nên tìm hiểu về Nguyên lý máy học"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "hethonghotro",
+         "patterns": [
+            "Mình muốn làm hệ thống hỗ trợ tìm kiếm tài liệu niên luận, luận văn, tiểu luận thì mình nên học gì",
+            "Mình muốn làm đề tài về hệ thống hỗ trợ tìm kiếm tài liệu thì mình cần học gì",
+            "Em muốn thực hiện đề tài về hệ thống hỗ trợ tìm kiếm tài liệu luận văn thì em nên học gì",
+            "Em làm đề tài liên quan đến hệ thống hỗ trợ tìm kiếm tài liệu thì em nên biết gì ạ",
+            "Để làm đề tài về hệ thống hỗ trợ tìm kiếm tài liệu thì em nên học gì ạ",
+            "hệ thống hỗ trợ tìm kiếm tài liệu",
+            "hệ thống hỗ trợ tìm kiếm tài liệu niên luận, luận văn, tiểu luận",
+            "hệ thống hỗ trợ tìm kiếm tài liệu thì nên học gì",
+            "Để làm được đề tài về hệ thống hỗ trợ tìm kiếm tài liệu thì nên học gì"
+         ],
+         "responses": [
+            "Bạn nên tìm hiểu học phần Nguyên lý máy học và học phần lập trình web",
+            "Bạn có thể tìm hiểu về Nguyên lý máy học và lập trình web"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "hethonggoiy",
+         "patterns": [
+            "Mình muốn làm về hệ thống gợi ý thì mình cần học gì ạ",
+            "Hệ thống gợi ý quần áo dựa trên mô tả sản phẩm và bình luận khách hàng",
+            "Để thực hiện đề tài về hệ thống gợi ý thì mình nên học gì ạ?",
+            "Em muốn thực hiện đề tài về hệ thống gợi ý thì em nên học gì ạ",
+            "Hệ thống gợi ý",
+            "Gợi ý",
+            "Hệ thống gợi ý quần áo dựa trên mô tả sản phẩm và bình luận",
+            "Về hệ thống gợi ý",
+            "Đề tài về hệ thống gợi ý"
+         ],
+         "responses": [
+            "Bạn có thể tìm hiểu về Nguyên lý máy học hoặc khai khoáng dữ liệu, hệ thống gợi ý; lập trình web."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "mri",
+         "patterns": [
+            "Phát hiện bất thường trên ảnh MRI não",
+            "Để làm đề tài liên quan đến ảnh MRI thì em nên học gì ạ",
+            "Để biết cách thực hiện đề tài liên quan đến ảnh MRI thì em cần biết gì ạ",
+            "ảnh MRI",
+            "MRI",
+            "Để làm đề tài về xử lý ảnh MRI em cần biết gì ạ",
+            "Mình muốn làm đề tài liên quan đến ảnh MRI thì cần học gì",
+            "Em cần biết gì để làm đề tài liên quan đến ảnh MRI",
+            "Em nên học gì để làm gì đề tài đến xử lý ảnh MRI"
+         ],
+         "responses": [
+            "Bạn nên tìm hiểu về Xử lý ảnh, có khả năng lập trình tốt, sử dụng thành thạo Python"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "3d",
+         "patterns": [
+            "Mô hình dựng ảnh 3D hiển thị vùng bất thường từ ảnh y khoa",
+            "mô hình dựng ảnh 3D",
+            "dựng ảnh 3d từ ảnh y khoa",
+            "mô hình dựng ảnh 3D từ ảnh y khoa",
+            "Em cần biết gì để làm đề tài liên quan đến mô hình dựng ảnh 3D dựa trên ảnh y khoa",
+            "Mình cần học gì để làm về đề tài mô hình dựng ảnh 3D"
+         ],
+         "responses": [
+            "Bạn nên tìm hiểu về Xử lý ảnh, có khả năng lập trình tốt, sử dụng thành thạo Python hoặc C++. Sử dụng thư viện Vtk"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "tailieucamera",
+         "patterns": [
+            "tài liệu về theo dõi hoạt động từ camera",
+            "tài liệu cần biết để làm về theo dõi hoạt động từ camera",
+            "tài liệu về  theo dõi hoạt động thông qua camera",
+            "Em nên tìm hiểu tài liệu gì để làm đề tài theo dõi hoạt động từ camera",
+            "có thể gợi ý cho mình tài liệu về theo dõi hoạt động từ camera",
+            "Mình cần đọc tài liệu gì để làm đề tài theo dõi hoạt động thông qua camera"
+         ],
+         "responses": [
+            "Bạn có thể đọc tài liệu của thầy Đỗ Thanh Nghị, Giáo trình khai khoáng dữ liệu, NXB Đại học Cần Thơ",
+            "Bạn có thể tham khảo tài liệu của thầy Đỗ Thanh Nghị, Phạm Nguyên Khang, Giáo trình nguyên lý máy học, NXB Đại học Cần Thơ"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "tailieucovanao",
+         "patterns": [
+            "tài liệu về cố vấn học tập ảo",
+            "tài liệu về trợ lý ảo",
+            "tài liệu cố vấn ảo",
+            "tài liệu trợ lý ảo",
+            "Bạn có thể gợi ý cho mình tài liệu về cố vấn học tập ảo",
+            "Bạn có gợi gì ý về tài liệu cho việc thực hiện cố vấn học tập ảo"
+         ],
+         "responses": [
+            "Bạn có thể tham khảo trên www.tensorflow.org",
+            "Bạn có thể thao khảo tài liệu S. Raj.: Building Chatbots with Python: Using Natural Language Processing and Machine Learning. Apress, 2018."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "tailieumri",
+         "patterns": [
+            "tài liệu về xử lý ảnh mri",
+            "bạn có thể gợi ý cho mình tài liệu về xử lý ảnh mri",
+            "mình muốn tìm hiểu về tài liệu ảnh mri thì mình nên đọc tài liệu nào",
+            "Bạn có thể gợi ý cho mình tài liệu về ảnh mri",
+            "Mình muốn tìm tài liệu về ảnh mri",
+            "tài liệu xử lý ảnh mri",
+            "Mình muốn tìm hiểu về tài liệu cho đề tài về xử lý ảnh mri",
+            "Bạn có thể gợi ý cho mình tài liệu về xử lý ảnh mri"
+         ],
+         "responses": [
+            "Bạn có thể tham khảo tài liệu sau: Cuong Phuc Ngo, Amadeus Aristo Winarto, Connie Khor Li Kou, Sojeong Park, Farhan Akram, and Hwee Kuan Lee, Fence GAN: Towards Better Anomaly Detection",
+            "Bạn có thể tham khảo tài liệu: I. Goodfellow, J. Pouget-Abadie, M. Mirza, B. Xu, D. Warde-Farley,S. Ozair, A. Courville, and Y. Bengio. Generative adversarial nets. Advances in neural information processing systems, 2014, pp. 2672–2680"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "tailieu3d",
+         "patterns": [
+            "Tài liệu về mô hình dựng ảnh 3D từ ảnh y khoa",
+            "Mình nên tìm hiểu tài liệu gì để có thể làm về dựng ảnh 3D từ ảnh",
+            "Tài liệu về mô hình dựng ảnh 3D từ ảnh",
+            "Mình muốn tìm hiểu tài liệu về dựng ảnh 3D thì tập các ảnh",
+            "Mình nên đọc tài liệu gì để có thể thực hiện đề tài về dựng ảnh 3D từ tập các ảnh",
+            "Em nên đọc tài liệu gì để có thể làm về mô hình dựng ảnh 3D từ tập các ảnh",
+            "Tài liệu về mô hình dựng ảnh 3D từ tập các ảnh"
+         ],
+         "responses": [
+            "Bạn có thể tham khảo tài liệu: Van Sinh NGUYEN, Manh Ha TRAN, Hoang Minh Quang VU. A Research on 3D Model Construction from 2D DICOM. 2016",
+            "Bạn có thể tham khảo tài liệu: Shawn McCann. 3D Reconstruction from Multiple Images"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "lichbaocao ",
+         "patterns": [
+            "Lịch báo cáo niên luận là khi nào ạ?",
+            "Khi nào thì sẽ báo cáo niên luận ạ",
+            "Em muốn hỏi về lịch báo cáo niên luận ạ",
+            "Mình muốn đặt câu hỏi về lịch báo cáo niên luận ạ",
+            "Mình muốn hỏi là khi nào thì báo cáo niên luận",
+            "Em muốn hỏi là khi nào thì sẽ báo cáo niên luận ạ"
+         ],
+         "responses": [
+            "Thông thường thì sẽ là tuần 17, 18, 19, bạn có thể chờ thông báo từ giảng viên hướng dẫn sau."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "formatnienluan",
+         "patterns": [
+            "Format file word báo cáo niên luận như thế nào ạ?",
+            "Em muốn về ví dụ format cho file báo cáo niên luận ạ",
+            "format file word báo cáo niên luận",
+            "Mình muốn hỏi file niên luận nên trình bày thế nào ạ",
+            "File niên luận trình bày thế nào ạ",
+            "Báo cáo niên luận trình bày theo format thế nào"
+         ],
+         "responses": [
+            "Bạn có thể tham khảo format file word từ giảng viên hướng dẫn hoặc bạn có thể tham khảo format sau: https://docs.google.com/document/d/17LUvwmgz4rrnvxamM5-4BTbhtWZbSAS4/edit?usp=sharing&ouid=106334258604037012931&rtpof=true&sd=true"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "quydinhfilenienluan",
+         "patterns": [
+            "Quy định về việc trình bày file niên luận như thế nào ạ?",
+            "File niên luận có quy định gì về cách trình bày ạ?",
+            "Quỳ định để viết báo cáo niên luận là gì ạ",
+            "Mình muốn hỏi về quy định của quyển báo cáo niên luận ạ",
+            "Em muốn hỏi vê quy định cho việc viết quyển báo cáo niên luận ạ",
+            "Quy định về cách trình bày quyển báo cáo niên luận như thế nào ạ",
+            "Em muốn hỏi về quy định cách trình bay quyền báo cáo niên luận ạ"
+         ],
+         "responses": [
+            "Bạn có thể tham khảo quy định ở đây: https://docs.google.com/document/d/1gTbEpcqpG9FF_OisQtkw46R4feQ00DSj/edit?usp=sharing&ouid=106334258604037012931&rtpof=true&sd=true"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "nguontailieu",
+         "patterns": [
+            "Mình có thể tìm nguồn tài liệu tham khảo ở đâu được ạ?",
+            "Mình muốn tìm những tài liệu tham khảo thì mình nên chọn nguồn nào ạ?",
+            "Mình cần tìm tài liệu them khảo thì mình nên chọn nguồn nào ạ?",
+            "Mình muốn xem tài liệu tham khảo thì mình nên tìm kiếm ở đâu ạ",
+            "nguồn tài liệu tham khảo",
+            "tìm kiếm nguồn tài liệu tham khảo",
+            "nguồn để tìm kiếm tài liệu tham khảo",
+            "Em muốn có tài liệu tham khảo thì nên tìm ở nguồn nào ạ?"
+         ],
+         "responses": [
+            "Bạn có thể tìm những bài viết khoa học ở https://www.sciencedirect.com/ để phục vụ việc tham khảo."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "giangvienhuongdan",
+         "patterns": [
+            "Mình muốn tìm hiểu về thông tin của giảng viên hướng dẫn thì mình nên tìm ở đâu ạ",
+            "Thông tin của giảng viên hướng dẫn",
+            "Em muốn tìm hiểu về thông tin của giảng viên hướng dẫn thì em nên tìm ở đâu",
+            "Để có thông tin của giảng viên hướng dẫn thì nên tìm ở đâu",
+            "Tìm thông tin giảng viên hướng dẫn ở đâu",
+            "Làm sao để tìm hiểu về thông tin của giảng viên hướng dẫn"
+         ],
+         "responses": [
+            "Bạn có thể tìm hiểu thông tin của giảng viên hướng dẫn tại website các đơn vị của trường tại đây: http://cit.ctu.edu.vn/index.php/cac-don-v/b-mon-cntt"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "detainienluan",
+         "patterns": [
+            "Mình nên chọn đề tài niên luận như thế nào?",
+            "Mình nên đăng ký đề tài niên luận như thế nào?",
+            "Làm sao để mình đăng ký đề tài niên luận",
+            "Đăng ký đề tài niên luận như thế nào",
+            "Cách đăng ký đề tài niên luận",
+            "Em nên làm cách nào để đăng ký đề tài niên luận",
+            "Em nên chọn đề tài niên luận như thế nào ạ"
+         ],
+         "responses": [
+            "Bạn có thể làm các đề tài được giảng viên hướng dẫn đề xuất hoặc bạn có thể xin giảng viên hướng dẫn tham khảo về đề tài mà bạn muốn làm nha."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "inquyenbaocaonienluan",
+         "patterns": [
+            "Mình nên đóng quyển báo cáo niên luận như thế nào ạ",
+            "Mình nên in quyển báo cáo niên luận như thế nào",
+            "Quyển báo cáo niên luận in như thế nào",
+            "Em cần in quyển báo cáo niên luận như thế nào ạ",
+            "In quyển báo cáo niên luận",
+            "Quyển báo cáo niên luận cần được in như thế nào",
+            "Quyển báo cáo niên luận nên in thế nào"
+         ],
+         "responses": [
+            "Sẽ tùy thuộc vào yêu cầu của giảng viên hướng dẫn trong việc có cần in quyển báo cáo cho niên luận hay không nha. Nhưng nếu có thì bạn nên in trên giấy A4 nha, mình khuyến khích nên in màu đối với nhưng trang có hình màu"
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "detainienluancoso",
+         "patterns": [
+            "Cách làm niên luận cơ sở",
+            "Làm niên luận cơ sở như thế nào",
+            "Mình muốn hỏi về cách làm niên luận cơ sở",
+            "Mình muốn hỏi là làm niên luận cơ sở như thế nào ạ",
+            "Niên luận cơ sở thực hiện như thế nào ạ",
+            "Cách thực hiện niên luận cơ sở",
+            "Em muốn hỏi về cách làm niên luận cơ sở ạ",
+            "Em muốn tìm hiểu về cách làm niên luận cơ sở ạ"
+         ],
+         "responses": [
+            "Sau khi đăng ký vào nhóm niên luận như bạn chờ giảng viên hướng dẫn gửi mail thông báo cho bạn về lịch họp để giới thiệu về quy trình thực hiện và các đề tài niên luận mà giảng viên gợi ý nha."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "dangkydetailuanvan",
+         "patterns": [
+            "Làm sao để đăng ký đề tài luận văn",
+            "Đăng ký làm luận văn như thế nào",
+            "Mình muốn hỏi về cách đăng ký làm luận văn tốt nghiệp",
+            "Đăng ký luận văn tốt nghiệp như thế nào",
+            "Cách đăng ký đề tài luận văn tốt nghiệp",
+            "Luận văn tốt nghiệp đăng ký như thế nào ạ",
+            "Mình muốn biết cách đăng ký luận văn tốt nghiệp",
+            "Cách đăng ký luận văn tốt nghiệp"
+         ],
+         "responses": [
+            "Bạn chủ động liên lạc với giảng viên để xin đăng ký đề tài và chờ thông tin về việc giao đề tài nha."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "baocaonienluan",
+         "patterns": [
+            "Quy trình báo cáo đề tài niên luận như thế nào ạ",
+            "Quy trình báo cáo đề tài niên luận cơ sở",
+            "Quy trình báo cáo đề tài niên luận chuyên ngành",
+            "Cách thức báo cáo đề tài niên luận cơ sở",
+            "Cách báo cáo niên luận chuyên ngành",
+            "Mình muốn hỏi về cách báo cáo niên luận ạ",
+            "Em muốn biết quy trình báo cáo niên luận như thế nào ạ"
+         ],
+         "responses": [
+            "Quy trình và lịch báo cáo niên luận sẽ được giảng viên thông báo cho các bạn."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "quytrinhbaoveluanvan",
+         "patterns": [
+            "Quy trình bảo vệ luận văn như thế nào ạ?",
+            "Mình muốn hỏi là quy trình bảo vệ luận văn sẽ diễn ra như thế nào",
+            "Mình muốn biết về quy trình bảo vệ luận văn",
+            "quy trình bảo vệ luận văn tốt nghiệp",
+            "Em muốn hỏi về quy trình bảo vệ luận văn diễn ra như thế nào ạ",
+            "Em muốn biết về quy trình bảo vệ luận văn ạ",
+            "Cho mình hỏi về quy trình bảo vệ luận văn diễn ra thế nào ạ"
+         ],
+         "responses": [
+            "Vào tầm 2 tuần trước khi kết thúc học kỳ thì giảng viên sẽ phản hồi với thư ký bộ môn về tình trạng thực hiện đề tài của bạn. Sau đó lãnh đạo bộ môn sẽ đề xuất danh sách hội đồng bảo vệ luận văn tốt nghiệp. Thư ký bộ môn sẽ sắp xếp lịch và chuyển thông tin hội đồng đến ban chủ nhiệm khoa để thành lập quyết định. Sau đó thư ký bộ môn sẽ thông báo cho giảng viên hướng dẫn và bạn về thông tin bảo vệ luận văn nha."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "congcu",
+         "patterns": [
+            "Làm sao để chọn công cụ thích hợp để thực hiện đề tài ạ",
+            "Em nên tìm thông tin về những công cụ để làm đề tài ở đâu ạ",
+            "Làm sao để biết công cụ nào thích hợp để thực hiện đề tài",
+            "Công cụ để thực hiện đề tài",
+            "Em nên dùng công cụ gì để thực hiện đề tài",
+            "Công cụ nào là thích hợp để thực hiện đề tài",
+            "Nên chọn công cụ nào thích hợp để thực hiện đề tài"
+         ],
+         "responses": [
+            "Bạn có thể hỏi ý kiến của giảng viên hướng dẫn để gợi ý cho bạn các công cụ. Hoặc bạn có thể tham khảo các project tương tự, từ đó bạn có thể tham khảo các công cụ mà người làm project đó dùng để thực hiện."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "congcuweb",
+         "patterns": [
+            "Dạ, nếu mình muốn thực hiện đề tài liên quan đến web thì nên dùng những công cụ nào ạ",
+            "Mình muốn thực hiện đề tài về web thì mình nên chọn những công cụ nào",
+            "Công cụ thực hiện đề tài lập trình web",
+            "Mình muốn làm web thì mình nên tham khảo những công cụ nào ạ",
+            "Mình nên tham khảo gì để thực hiện đề tài liên quan đến web ạ",
+            "Mình nên học những công cụ gì để thực hiện đề tài liên quan đến web ạ"
+         ],
+         "responses": [
+            "Bạn có thể tham khảo những công cụ như Vue.js, Next.js, React.js, Bootstrap, Knex.js, MySQL, SQLite, FLask, SQLAlchemy, Sequelize,..."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "chatbot",
+         "patterns": [
+            "Mình muốn làm đề tài về chatbot thì mình nên tham khảo công cụ gì",
+            "Công cụ để thực hiện đề tài chatbot",
+            "Mình nên học những công cụ gì để thực hiện đề tài liên quan đến chatbot",
+            "Mình cần học gì để làm những đề tài liên quan đến chatbot",
+            "Chọn công cụ gì để thực hiện những đề tài liên quan đến chatbot",
+            "Mình nên tìm hiểu về công cụ gì để có thể xây dựng chatbot"
+         ],
+         "responses": [
+            "Bạn có thể tham khảo những tài liệu liền quan về PyTorch, TensorFlow, NLTK, Chatterbot nha."
+         ],
+         "context_set": ""
+      },
+      {
+         "tag": "ten",
+         "patterns": [
+            "Bạn là ai?",
+            "Bạn tên gì?",
+            "Tên của bạn là gì?",
+            "Mình có thể gọi bạn là gì",
+            "Tên bạn là gì vậy?",
+            "Hãy cho mình biết tên của bạn"
+         ],
+         "responses": [
+            "Mình là Wagon, rất vui được gặp bạn. Nếu bạn có thắc mắc gì về quá trình làm niên luận hoặc luận văn thì bạn có thể đặt câu hỏi cho mình.",
+            "Mình là Wagon, rất vui được gặp bạn. Bạn có thể đặt câu hỏi cho mình về quy trình làm niên luận và luận văn."
+         ],
+         "context_set": ""
+      }
+   ]
+}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block body %}
+{% for post in q %}
+<div class="card text-center mb-2">
+   <div class="card-header">
+      <ul class="nav nav-tabs card-header-tabs">
+         <li class="nav-item">
+            <a class="nav-link active" href="#">Bài viết</a>
+         </li>
+         {% if request.path == url_for('search') %}
+         <li class="nav-item">
+            <a class="nav-link link-success" href="{{url_for('view_post', id = post.id)}}">Bình luận</a>
+         </li>
+         {% endif %}
+      </ul>
+   </div>
+   <div class="card-body">
+      {% if current_user.id == post.user.id %}
+      <button class="btn btn-sm btn-link link-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+         style="float:right">
+         Xóa
+      </button>
+      {% endif %}
+      <h5 class="card-title text-left">Người viết: {{post.user.email}}</h5>
+      <h4 class="card-title text-left">{{post.title}}</h4>
+      <p class="card-text text-left">{{post.body}}</p>
+      <p class="card-text text-left"><small class="text-muted">{{post.created_at}}</small></p>
+   </div>
+</div>
+{% endfor %}
+{% endblock body %}

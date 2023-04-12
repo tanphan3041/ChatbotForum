@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block body %}
+{% if current_user.is_authenticated %}
+{% include 'home.html' %}
+{% else %}
+{% include 'login-form.html' %}
+{% endif %}
+{% endblock body %}

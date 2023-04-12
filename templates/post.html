@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="row justify-content-center">
+   <div class="col col-10">
+      {% include '_post.html' %}
+   </div>
+</div>
+<div class="row justify-content-center">
+   <div class="col col-9">
+      <form class="form-signin" method="post" action="/posts/{{post.id}}/comments">
+         <input name="body" type="body" class="form-control" placeholder="Nhập bình luận" required="" autofocus="">
+         <button class="btn btn-md btn-success btn-block" type="submit">Gửi</button>
+      </form>
+      
+      <div class="my-3 p-3 bg-white rounded box-shadow">
+         <h6 class="border-bottom border-gray pb-2 mb-0 text-left">Bình luận</h6>
+         {% for comment in comments %}
+               <div class="media text-muted pt-3">
+                  <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray text-left">
+                     <strong class="d-block text-gray-dark text-left">{{comment.user.email}}</strong>
+                     {{comment.body}}
+                  </p>
+               </div>
+         {% endfor %}
+      </div>
+   </div>
+</div>
+{% endblock body %}

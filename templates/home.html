@@ -1,0 +1,22 @@
+<div class="row">
+   <div class="col col-12">
+      <div class="container border-gray mb-4">
+         <form class="form-signin" method="post" action="/posts">
+            <input name="title" type="title" class="form-control mb-2"
+               placeholder="Xin chào {{current_user.email}}. Mời bạn nhập tiêu đề cho câu hỏi." required=""
+               autofocus="">
+            <input name="body" type="body" class="form-control mb-2" placeholder="Mời bạn nhập nội dung câu hỏi"
+               required="" autofocus="">
+            <button class="btn btn-md btn-success btn-block" type="submit">Gửi câu hỏi</button>
+         </form>
+      </div>
+   </div>
+</div>
+
+<div class="row d-flex justify-content-center">
+   <div class="col col-8">
+      {% for post in posts %}
+      {% include '_post.html' %}
+      {% endfor %}
+   </div>
+</div>
